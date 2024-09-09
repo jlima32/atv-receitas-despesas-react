@@ -11,22 +11,6 @@
     color: #7FA1C3;
 }
 
-.header-btn-transacoes{
-    background-color: #6482AD;
-    border-radius: 6px;
-    border: 1px solid #EEE;
-    padding: 4px 10px;
-    color: #FFF;
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.header-btn-transacoes:hover{
-    transition: .6s;
-    background-color: #51903e;
-}
-
 .lista-transacoes{
     width: 100%;
     

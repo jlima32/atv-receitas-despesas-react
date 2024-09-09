@@ -1,0 +1,32 @@
+
+.total-transacoes-container{
+    width: 50%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.total-transacoes-container:first-child{
+    border-right: 1px solid #EEE;
+    margin-right: 15px;
+}
+.total-transacoes-icone{
+    margin-right: 10px;
+}
+
+.total-transacoes-info{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.total-transacoes-titulo{
+    color: #7FA1C3;
+}
+
+.receitas{
+    color: #3EA61E;
+}
+
+.despesas{
+    color: #EA3323;
+}

@@ -1,4 +1,5 @@
 import Box from "../Box/Box";
+import Button from "../Button/Button";
 import Transacao from "../Transacao/Transacao";
 import "./Transacoes.css";
 
@@ -8,7 +9,7 @@ export default function Transacoes(){
         <Box>
             <div className="header-transacoes">
                 <p className="header-transacoes-titulo">Transações</p>
-                <button className="header-btn-transacoes">Adicionar</button>
+                <Button text="Adicionar" class="header-btn-transacoes" type="button"/>
             </div>
             <div className="lista-transacoes">
                 <div className="header-lista-transacoes">
