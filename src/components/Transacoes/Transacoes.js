@@ -3,7 +3,10 @@ import Button from "../Button/Button";
 import Transacao from "../Transacao/Transacao";
 import "./Transacoes.css";
 
-export default function Transacoes(){
+export default function Transacoes({transacoesObj}){
+
+    
+  const transacoes = [...transacoesObj];
     return <>
 
         <Box>
@@ -19,9 +22,9 @@ export default function Transacoes(){
                 </div>
                 <hr/>
                 <div className="conteudo-lista-transacoes">
-                    
-                    <Transacao />
-                   
+                    { transacoes.map ((transacao, i) => (
+                        <Transacao transacao={transacao} key={i}/>
+                    ))}
                 </div>
             </div>
         </Box>

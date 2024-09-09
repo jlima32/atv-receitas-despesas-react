@@ -1,35 +1,12 @@
 import "./Transacao.css";
 
-export default function Transacao(){
+export default function Transacao({transacao}){
+    const tipoLowerCase = transacao.tipo.toLowerCase();
     return <>
-        <ul className="transacao receita">
-            <li className="transacao-descricao">Salário</li>
-            <li className="transacao-tipo receita-txt">Receita</li>
-            <li className="transacao-valor receita-txt">R$ 3.500,00</li>
-        </ul>
-        <hr/>
-        <ul className="transacao despesa">
-            <li className="transacao-descricao">Pizza</li>
-            <li className="transacao-tipo despesa-txt">Despesa</li>
-            <li className="transacao-valor despesa-txt">R$ 62,00</li>
-        </ul>
-        <hr/>
-        <ul className="transacao despesa">
-            <li className="transacao-descricao">Água</li>
-            <li className="transacao-tipo despesa-txt">Despesa</li>
-            <li className="transacao-valor despesa-txt">R$ 162,00</li>
-        </ul>
-        <hr/>
-        <ul className="transacao despesa">
-            <li className="transacao-descricao">Luz</li>
-            <li className="transacao-tipo despesa-txt">Despesa</li>
-            <li className="transacao-valor despesa-txt">R$ 94,00</li>
-        </ul>
-        <hr/>
-        <ul className="transacao despesa">
-            <li className="transacao-descricao">Internet</li>
-            <li className="transacao-tipo despesa-txt">Despesa</li>
-            <li className="transacao-valor despesa-txt">R$ 126,00</li>
+        <ul className={`transacao ${tipoLowerCase}`} key={transacao.i}>
+            <li className="transacao-descricao">{transacao.descricao}</li>
+            <li className={`transacao-tipo ${tipoLowerCase}-txt`}>{transacao.tipo}</li>
+            <li className={`transacao-valor ${tipoLowerCase}-txt`}>{transacao.valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</li>
         </ul>
         <hr/>
     </>

@@ -7,7 +7,7 @@ function App() {
 
   const transacoes = [
     {
-      'descricao' : 'Salário',
+      'descricao' : 'Salario',
       'tipo' : 'Receita',
       'valor' : 2500.32
     },
@@ -17,7 +17,7 @@ function App() {
       'valor' : 62.48
     },
     {
-      'descricao' : 'Água',
+      'descricao' : 'Agua',
       'tipo' : 'Despesa',
       'valor' : 94.95
     },
@@ -56,7 +56,7 @@ function App() {
 
   return (<>
       <Header receitas={calcularReceitas()} despesas={calcularDespesas()} saldo={calcularSaldo()}/>
-      <Transacoes />
+      <Transacoes transacoesObj={transacoes}/>
       <Form />
   </>
   );
