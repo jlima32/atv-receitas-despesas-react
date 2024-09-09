@@ -26,6 +26,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+  box-sizing: border-box;
 	font-size: 100%;
 	vertical-align: baseline;
 }
@@ -36,7 +37,24 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  background-color: #EEE;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
+#root{
+  margin: 20px;
+  background-color: #F9F9F9;
+  border-radius: 6px;
+  width: 400px;
+  min-height: 760px;
+  padding: 20px;
+  box-shadow: 2.0px 4.0px 4.0px hsl(0deg 0% 0% / 0.38);
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -52,3 +70,4 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
