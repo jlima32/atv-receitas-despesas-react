@@ -5,8 +5,7 @@ import Box from "../Box/Box";
 
 export default function Header(){
     return <>
-        <header>
-            
+        <header>     
             <Box>
                 <div className="header-saldo">
                     <p className="saldo-titulo">Saldo Atual</p>
