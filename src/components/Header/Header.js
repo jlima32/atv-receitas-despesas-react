@@ -1,11 +1,13 @@
 import "./Header.css";
 import iconeReceitas from "../../assets/img/trending_up.svg"
 import iconeDespesas from "../../assets/img/trending_down.svg"
+import Box from "../Box/Box";
 
 export default function Header(){
     return <>
         <header>
-            <div className="header-container">
+            
+            <Box>
                 <div className="header-saldo">
                     <p className="saldo-titulo">Saldo Atual</p>
                     <p className="saldo-valor">R$ 3.056,00</p>
@@ -32,7 +34,7 @@ export default function Header(){
                     </div>
 
                 </div>
-            </div>
+            </Box>
         </header>
     </>
 }
