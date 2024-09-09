@@ -1,0 +1,52 @@
+.header-form-titulo {
+    font-size: 16px;
+    font-weight: 600;
+    color: #7FA1C3;
+    margin-bottom: 15px;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50{
+    width: 40%;
+}
+
+label{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+input, select{
+    background-color: #FBFBFB;
+    border-radius: 6px;
+    border: 1px solid #E6E6E6;
+    padding: 6px;
+    outline: 0;
+    color: #6482AD;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+input:focus{
+    border: 1px solid #7FA1C3;
+}

@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
-
 }
 
 .header-transacoes-titulo {
@@ -54,46 +53,6 @@
     text-align: right;
 }
 
-
-.transacao{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 500;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-
-.transacao-descricao{
-    width: 50%;
-    margin-left: 5px;
-    color: #888;
-}
-.transacao-tipo{
-    text-align: left;
-    width: 25%;
-}
-.transacao-valor{
-    text-align: right;
-    width: 25%;
-}
-
-.despesa {
-    border-left: 4px solid #EA3323;
-}
-.despesa-txt{
-    color: #EA3323;
-}
-
-.receita {
-    border-left: 4px solid #3EA61E;
-}
-
-.receita-txt{
-    color: #3EA61E;
-}
 
 hr{
     opacity: 15%;
