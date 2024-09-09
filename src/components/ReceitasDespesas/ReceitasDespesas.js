@@ -9,7 +9,7 @@ export default function ReceitasDespesas({tipo, src, valor}){
             </div>
             <div className="total-transacoes-info">
                 <p className="total-transacoes-titulo">{tipo}</p>
-                <p className={`total-transacoes-soma ${tipoLowerCase}`}>R$ {valor}</p>
+                <p className={`total-transacoes-soma ${tipoLowerCase}`}>{valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
             </div>
         </div>
     </>

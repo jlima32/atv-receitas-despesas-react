@@ -23,7 +23,7 @@ export default function Transacao(){
         <ul className="transacao despesa">
             <li className="transacao-descricao">Luz</li>
             <li className="transacao-tipo despesa-txt">Despesa</li>
-            <li className="transacao-valor despesa-txt">R$ 942,00</li>
+            <li className="transacao-valor despesa-txt">R$ 94,00</li>
         </ul>
         <hr/>
         <ul className="transacao despesa">
