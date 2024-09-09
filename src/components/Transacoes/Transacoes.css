@@ -1,0 +1,97 @@
+.header-transacoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-transacoes-titulo {
+    font-size: 16px;
+    font-weight: 600;
+    color: #7FA1C3;
+}
+
+.header-btn-transacoes{
+    background-color: #6482AD;
+    border-radius: 6px;
+    border: 1px solid #EEE;
+    padding: 4px 10px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header-btn-transacoes:hover{
+    transition: .6s;
+    background-color: #51903e;
+}
+
+.lista-transacoes{
+    width: 100%;
+}
+
+.header-lista-transacoes{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.titulo-lista-transacoes{
+    width: 50%;
+    font-size: 12px;
+    font-weight: 600;
+    color: #BAB7B7;
+    margin-top: 10px;
+}
+.titulo-lista-transacoes:nth-child(2){
+    width: 25%;
+    text-align: center;
+}
+.titulo-lista-transacoes:nth-child(3){
+    width: 25%;
+    text-align: center;
+}
+
+
+.transacao{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.transacao-descricao{
+    width: 50%;
+    margin-left: 5px;
+    color: #888;
+}
+.transacao-tipo{
+    text-align: center;
+    width: 25%;
+}
+.transacao-valor{
+    text-align: right;
+    width: 25%;
+}
+
+.despesa {
+    border-left: 4px solid #EA3323;
+}
+.despesa-txt{
+    color: #EA3323;
+}
+
+.receita {
+    border-left: 4px solid #3EA61E;
+}
+
+.receita-txt{
+    color: #3EA61E;
+}
+
+hr{
+    opacity: 15%;
+}
