@@ -1,4 +1,6 @@
 import "./Header.css";
+import iconeReceitas from "../../assets/img/trending_up.svg"
+import iconeDespesas from "../../assets/img/trending_down.svg"
 
 export default function Header(){
     return <>
@@ -9,24 +11,23 @@ export default function Header(){
                     <p className="saldo-valor">R$ 3.056,00</p>
                 </div>
                 <div className="header-receitas-despesas">
-
-                    <div className="receitas-container">
-                        <div className="receitas-icone">
-                            #
+                    <div className="total-transacoes-container">
+                        <div className="total-transacoes-icone">
+                            <img src={iconeReceitas} alt="Ícone Receitas" />
                         </div>
-                        <div className="receitas-info">
-                            <p className="receitas-titulo">Receitas</p>
-                            <p className="receitas-total">R$ 3.500,00</p>
+                        <div className="total-transacoes-info">
+                            <p className="total-transacoes-titulo">Receitas</p>
+                            <p className="total-transacoes-soma receitas">R$ 3.500,00</p>
                         </div>
                     </div>
 
-                    <div className="despesas-container">
-                        <div className="despesas-icone">
-                            #
+                    <div className="total-transacoes-container">
+                        <div className="total-transacoes-icone">
+                            <img src={iconeDespesas} alt="Ícone Despesas" />
                         </div>
-                        <div className="despesas-info">
-                            <p className="despesas-titulo">Despesas</p>
-                            <p className="despesas-total">R$ 444,00</p>
+                        <div className="total-transacoes-info">
+                            <p className="total-transacoes-titulo">Despesas</p>
+                            <p className="total-transacoes-soma despesas">R$ 444,00</p>
                         </div>
                     </div>
 
