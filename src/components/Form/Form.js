@@ -1,5 +1,6 @@
 import "./Form.css";
 import Box from "../Box/Box";
+import Button from "../Button/Button";
 
 export default function Form(){
     return<>
@@ -25,7 +26,7 @@ export default function Form(){
                         <input type="text" />
                     </div>
                 </div>
-                <button>Adicionar Transação</button>
+                <Button text="Adicionar Transação" class="btn-adicionar-transacao w100" type="submit"/>
             </form>
         </Box>
     </>

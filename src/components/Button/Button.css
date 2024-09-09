@@ -1,0 +1,18 @@
+.btn{
+    background-color: #6482AD;
+    border-radius: 6px;
+    border: 1px solid #EEE;
+    color: #FFF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transition: .6s;
+    background-color: #51903e;
+}
+
+.btn-adicionar-transacao{
+    padding: 6px;
+    font-size: 14px;
+}
