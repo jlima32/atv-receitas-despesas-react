@@ -15,19 +15,23 @@ export default function Transacoes({transacoesObj, ocultar}){
                 <p className="header-transacoes-titulo">Transações</p>
                 <Button text="Adicionar" class="header-btn-transacoes" type="button" onclick={ocultar}/>
             </div>
-            <div className="lista-transacoes">
-                <div className="header-lista-transacoes">
-                    <div className="titulo-lista-transacoes">Descrição</div>
-                    <div className="titulo-lista-transacoes">Tipo</div>
-                    <div className="titulo-lista-transacoes">Valor</div>
+            {transacoes.length === 0 ? 
+                <p className="msg-lista">A lista de transações está vazia. Comece a adicionar itens!</p>
+            : 
+                <div className="lista-transacoes">
+                    <div className="header-lista-transacoes">
+                        <div className="titulo-lista-transacoes">Descrição</div>
+                        <div className="titulo-lista-transacoes">Tipo</div>
+                        <div className="titulo-lista-transacoes">Valor</div>
+                    </div>
+                    <hr/>
+                    <div className="conteudo-lista-transacoes">
+                        { transacoes.map ((transacao, i) => (
+                            <Transacao transacao={transacao} key={i}/>
+                        ))}
+                    </div>
                 </div>
-                <hr/>
-                <div className="conteudo-lista-transacoes">
-                    { transacoes.map ((transacao, i) => (
-                        <Transacao transacao={transacao} key={i}/>
-                    ))}
-                </div>
-            </div>
+            }
         </Box>
     </>
 }

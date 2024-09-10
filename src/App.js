@@ -6,33 +6,7 @@ import Transacoes from './components/Transacoes/Transacoes';
 
 function App() {
 
-  const [transacoes, setTransacoes] = useState([
-    {
-      'descricao' : 'Salario',
-      'tipo' : 'Receita',
-      'valor' : 2500.32
-    },
-    {
-      'descricao' : 'Pizza',
-      'tipo' : 'Despesa',
-      'valor' : 62.48
-    },
-    {
-      'descricao' : 'Agua',
-      'tipo' : 'Despesa',
-      'valor' : 94.95
-    },
-    {
-      'descricao' : 'Luz',
-      'tipo' : 'Despesa',
-      'valor' : 162.10
-    },
-    {
-      'descricao' : 'Internet',
-      'tipo' : 'Despesa',
-      'valor' : 126.35
-    }
-  ]);
+  const [transacoes, setTransacoes] = useState([]);
 
 
   function calcularReceitas(){
@@ -67,14 +41,16 @@ function App() {
 
   function adicionarTransacao(){
     const descricao = document.getElementById('descricao');
+    const tipo = document.getElementById('tipo');
     const valor = document.getElementById('valor');
     const novaTransacao = { 
       'descricao' : descricao.value,
-      'tipo' : document.getElementById('tipo').value,
+      'tipo' : tipo.value,
       'valor' : parseFloat(valor.value)
     }
     setTransacoes([...transacoes, novaTransacao])
     descricao.value = '';
+    tipo.value = 'Despesa';
     valor.value = '';
 
     ocultarForm();
