@@ -2,8 +2,22 @@
 
 .ocultar-form{
     display: none;
-    
 }
+.anim {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-top: 10%;
+    }
+  
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+  }
 
 .header-form-titulo {
     font-size: 16px;

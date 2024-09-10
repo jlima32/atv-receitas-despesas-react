@@ -56,6 +56,7 @@ function App() {
     const divForm = document.querySelector('#form');
     if(divForm.classList.contains('ocultar-form')){
       divForm.classList.remove('ocultar-form')
+      divForm.classList.add('anim')
     }else{
       divForm.classList.add('ocultar-form')
     }
