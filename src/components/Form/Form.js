@@ -24,7 +24,7 @@ export default function Form({adicionar}){
                         </div>
                         <div className="form-input w50">
                             <label htmlFor="valor">Valor: </label>
-                            <input type="text" id="valor" />
+                            <input type="text" id="valor" placeholder="ex: 199.90" />
                         </div>
                     </div>
                     <Button text="Adicionar Transação" class="btn-adicionar-transacao w100" type="button" onclick={adicionar}/>

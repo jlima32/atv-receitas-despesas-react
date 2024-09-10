@@ -43,17 +43,34 @@ function App() {
     const descricao = document.getElementById('descricao');
     const tipo = document.getElementById('tipo');
     const valor = document.getElementById('valor');
-    const novaTransacao = { 
-      'descricao' : descricao.value,
-      'tipo' : tipo.value,
-      'valor' : parseFloat(valor.value)
-    }
-    setTransacoes([...transacoes, novaTransacao])
-    descricao.value = '';
-    tipo.value = 'Despesa';
-    valor.value = '';
 
-    ocultarForm();
+
+    if(descricao.value === ''){
+      alert("Digite uma descrição para o item!")
+    }else if(descricao.value.length < 3){
+      alert("Digite uma descrição com no mínimo 3 caracteres!")
+    }else if(!isNaN(descricao.value)){
+      alert("Digite texto no campo de descrição!")
+    }else if(isNaN(valor.value)){
+      alert("Digite números no campo de valor! (ex: 199.90)")
+    }else if(valor.value < 0){
+      alert("Digite um valor maior do que 0!")
+    }else if(valor.value === ''){
+      alert("Digite um valor para o item!")
+    }else{
+      
+      const novaTransacao = { 
+        'descricao' : descricao.value,
+        'tipo' : tipo.value,
+        'valor' : parseFloat(valor.value)
+      }
+      setTransacoes([...transacoes, novaTransacao])
+      descricao.value = '';
+      tipo.value = 'Despesa';
+      valor.value = '';
+      
+      ocultarForm();
+    }
     
   }
 
