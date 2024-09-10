@@ -66,18 +66,25 @@ function App() {
   }
 
   function adicionarTransacao(){
-    const t1 = transacoes.push({ 
-      'descricao' : 'teste',
-      'tipo' : 'Despesa',
-      'valor' : 1500
-    })
-    setTransacoes([...transacoes, t1])
+    const descricao = document.getElementById('descricao');
+    const valor = document.getElementById('valor');
+    const novaTransacao = { 
+      'descricao' : descricao.value,
+      'tipo' : document.getElementById('tipo').value,
+      'valor' : parseFloat(valor.value)
+    }
+    setTransacoes([...transacoes, novaTransacao])
+    descricao.value = '';
+    valor.value = '';
+
+    ocultarForm();
+    
   }
 
   return (<>
       <Header receitas={calcularReceitas()} despesas={calcularDespesas()} saldo={calcularSaldo()}/>
       <Transacoes transacoesObj={transacoes} ocultar={ocultarForm}/>
-      <Form />
+      <Form adicionar={adicionarTransacao}/>
   </>
   );
 }

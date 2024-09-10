@@ -2,7 +2,7 @@ import "./Form.css";
 import Box from "../Box/Box";
 import Button from "../Button/Button";
 
-export default function Form(){
+export default function Form({adicionar}){
     return<>
         <div id="form" className="ocultar-form"> 
             <Box>
@@ -27,7 +27,7 @@ export default function Form(){
                             <input type="text" id="valor" />
                         </div>
                     </div>
-                    <Button text="Adicionar Transação" class="btn-adicionar-transacao w100" type="submit"/>
+                    <Button text="Adicionar Transação" class="btn-adicionar-transacao w100" type="button" onclick={adicionar}/>
                 </form>
             </Box>
         </div>
