@@ -1,3 +1,10 @@
+
+
+.ocultar-form{
+    display: none;
+    
+}
+
 .header-form-titulo {
     font-size: 16px;
     font-weight: 600;

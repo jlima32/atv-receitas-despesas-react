@@ -52,11 +52,18 @@ function App() {
     return saldoAtual.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
   }
 
-
+  function ocultarForm(){
+    const divForm = document.querySelector('#form');
+    if(divForm.classList.contains('ocultar-form')){
+      divForm.classList.remove('ocultar-form')
+    }else{
+      divForm.classList.add('ocultar-form')
+    }
+  }
 
   return (<>
       <Header receitas={calcularReceitas()} despesas={calcularDespesas()} saldo={calcularSaldo()}/>
-      <Transacoes transacoesObj={transacoes}/>
+      <Transacoes transacoesObj={transacoes} ocultar={ocultarForm}/>
       <Form />
   </>
   );
