@@ -26,6 +26,7 @@ export default function Transacoes({transacoesObj, ocultar}){
                     </div>
                     <hr/>
                     <div className="conteudo-lista-transacoes">
+                        {/* Percorre o array com as transações e renderiza os dados */}
                         { transacoes.map ((transacao, i) => (
                             <Transacao transacao={transacao} key={i}/>
                         ))}
