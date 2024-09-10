@@ -24,17 +24,17 @@
     width: 25%;
 }
 
-.despesa {
+.Despesa {
     border-left: 4px solid #EA3323;
 }
-.despesa-txt{
+.Despesa-txt{
     color: #EA3323;
 }
 
-.receita {
+.Receita {
     border-left: 4px solid #3EA61E;
 }
 
-.receita-txt{
+.Receita-txt{
     color: #3EA61E;
 }

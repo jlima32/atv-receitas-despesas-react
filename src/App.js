@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import Form from './components/Form/Form';
 import Header from './components/Header/Header';
@@ -5,7 +6,7 @@ import Transacoes from './components/Transacoes/Transacoes';
 
 function App() {
 
-  const transacoes = [
+  const [transacoes, setTransacoes] = useState([
     {
       'descricao' : 'Salario',
       'tipo' : 'Receita',
@@ -31,7 +32,8 @@ function App() {
       'tipo' : 'Despesa',
       'valor' : 126.35
     }
-  ]
+  ]);
+
 
   function calcularReceitas(){
     const totalReceitas = transacoes
@@ -57,9 +59,19 @@ function App() {
     if(divForm.classList.contains('ocultar-form')){
       divForm.classList.remove('ocultar-form')
       divForm.classList.add('anim')
+      document.getElementById('descricao').focus();
     }else{
       divForm.classList.add('ocultar-form')
     }
+  }
+
+  function adicionarTransacao(){
+    const t1 = transacoes.push({ 
+      'descricao' : 'teste',
+      'tipo' : 'Despesa',
+      'valor' : 1500
+    })
+    setTransacoes([...transacoes, t1])
   }
 
   return (<>
